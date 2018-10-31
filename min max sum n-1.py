@@ -1,5 +1,5 @@
-num = [1,2,3,4,5]
-
+totnum =int(input())
+num = list(map(int,input().split()))
 
 
 total=0
@@ -7,8 +7,7 @@ total=0
 for i in num:
     total =total + i
 
-min = total - max(num)
-max= total -min(num)
+minimum = total - max(num)
+maximum= total - min(num)
 
-print(min, sep="")
-print(max)
+print(minimum, maximum)
